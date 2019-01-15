@@ -1,0 +1,54 @@
+body{
+	background-color: orange;
+}
+
+h1{
+	
+font-family: verdana;
+font-size: 300%;
+}
+
+#d1{
+	color: blue;
+	width:auto;
+	margin:auto;
+	padding:20px;
+	margin:top;
+	border-style: solid;
+	border-width: medium;
+	
+	
+}
+#d2{
+	color: green;
+	width:auto;
+	margin:auto;
+	padding:20px;
+	margin:top;
+	border-style: solid;
+	border-width: medium;
+	
+	
+}
+#d3{
+	color: purple;
+	width:auto;
+	margin:auto;
+	padding:20px;
+	margin:top;
+	border-style: solid;
+	border-width: medium;
+	
+	
+}
+#d4{
+	color: yellow;
+	width:auto;
+	margin:auto;
+	padding:20px;
+	margin:top;
+	border-style: solid;
+	border-width: medium;
+	
+	
+}
