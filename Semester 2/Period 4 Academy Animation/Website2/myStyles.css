@@ -1,0 +1,63 @@
+body{
+	background-color: #FFAAAA;
+}
+
+img {
+  width: 50%;
+  height: auto;
+}
+
+.buttonDiv{
+	background-color: #801515;
+	width: 100px;
+	height: 30px;
+	border: solid black 2px;
+	float: left;
+	margin-top: 8px;
+	margin-left: 80px;
+	text-align: center;
+	border-radius: 12px;
+
+}
+
+
+.buttonDiv:hover {
+	background-color: Blue;
+}
+
+#wrapperDiv{
+	background-color: #550000;
+	width: 1000px;
+	height: 900px;
+	margin: auto;
+	border: solid black 2px;
+
+}
+
+#headerDiv{
+	background-color: #AA3939;
+	font-size: 40px;
+	font-size-adjust:auto;
+	font-style: oblique;
+	width: 1000px;
+	height: 100px;
+	border: solid black 2px;
+	text-align:center;
+
+}
+
+#navDiv{
+	background-color: #D46A6A;
+	width: 1000px;
+	height: 50px;
+	border: solid black 2px;
+
+}
+
+#bodyDiv{
+	background-color: #FFAAAA;
+	width: 1000px;
+	height: 700px;
+	border: solid black 2px;
+
+}
