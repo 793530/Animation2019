@@ -1,4 +1,6 @@
-//snake
+//Kalpa yakupitiyage
+//snakeGame
+//11/15/2018
 
 
 function Snake(loc, vel){
@@ -35,6 +37,8 @@ function Snake(loc, vel){
   }
   this.render = function(){
     fill(255,0,0);
+    //rect(this.segments[0].x,this.segments[0].y ,w,w);
+    //rect(this.loc.x,this.loc.y ,w,w);
 
     for(var i= 0; i < this.segments.length; i++){
         rect(this.segments[i].x,this.segments[i].y,w,w);
@@ -46,4 +50,4 @@ function Snake(loc, vel){
 
 
 
-}
+}//  +++++++++++++++++++++++++++++++++++++++  end of Snake

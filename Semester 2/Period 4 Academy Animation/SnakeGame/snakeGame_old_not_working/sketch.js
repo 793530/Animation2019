@@ -73,7 +73,7 @@ function draw() {
 
 //}
 
-function loadSnakes(n){
+function loadSnake(n){
 
 for(var i = 0; i < n; i++){
 
