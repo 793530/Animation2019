@@ -32,12 +32,11 @@ function draw() {
   }
   snake.run();
   food.run();
-  //if(snake.loc() = food.loc()
-    //snake(loc =(width/2, height/2),(1, 0) ));
+
   }
 
 
-function keyPressed(){ //Keys (controls)
+function keyPressed(){
   if(keyCode === UP_ARROW){
     snake.vel = createVector(0,-1*w);
   }
@@ -52,4 +51,4 @@ function keyPressed(){ //Keys (controls)
   }
 
 
-}
+}//  +++++++++++++++++++++++++++++++++++++++  end of Sketch
