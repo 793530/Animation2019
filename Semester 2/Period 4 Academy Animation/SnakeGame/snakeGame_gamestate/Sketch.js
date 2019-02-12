@@ -26,11 +26,21 @@ function setup() {
 
 function draw() {
 
-  if gameState()
+  if (gameState === 1){
+    startGame();
+
+  }else
+  if (gameState === 2){
+    playGame();
+
+  }else
+  if (gameState === 3){
+    endGame();
+
+  }else
 
 
-  }
-
+}
 
   function startGame(){
 
@@ -40,15 +50,15 @@ function draw() {
 
   function playGame(){
     if(snake.loc.dist(food.loc) === 0){
-        food.pickLoc();
-        snake.addSegment();
+      food.pickLoc();
+      snake.addSegment();
 
-      }
+      snake.run();
+      food.run();
 
-        snake.run();
-        food.run();
+      background(2);
+    }
 
-        background(2);
 
   }
 
@@ -58,19 +68,19 @@ function draw() {
   }
 
 
-function keyPressed(){
-  if(keyCode === UP_ARROW){
-    snake.vel = createVector(0,-1*w);
-  }
-  if(keyCode === DOWN_ARROW){
-    snake.vel = createVector(0,1*w);
-  }
-  if(keyCode === LEFT_ARROW){
-    snake.vel = createVector(-1*w,0);
-  }
-  if(keyCode === RIGHT_ARROW){
-    snake.vel = createVector(1*w,0);
-  }
+  function keyPressed(){
+    if(keyCode === UP_ARROW){
+      snake.vel = createVector(0,-1*w);
+    }
+    if(keyCode === DOWN_ARROW){
+      snake.vel = createVector(0,1*w);
+    }
+    if(keyCode === LEFT_ARROW){
+      snake.vel = createVector(-1*w,0);
+    }
+    if(keyCode === RIGHT_ARROW){
+      snake.vel = createVector(1*w,0);
+    }
 
 
-}//  +++++++++++++++++++++++++++++++++++++++  end of Sketch
+  }//  +++++++++++++++++++++++++++++++++++++++  end of Sketch
