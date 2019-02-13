@@ -3,6 +3,11 @@ var cols, rows;
 var snake;
 var food;
 var gameState = 1 ;
+var img;
+
+function preload() {
+  img = loadImage('startscreen.jpg');
+}
 
 function setup() {
   var cnv = createCanvas(800, 800);
@@ -29,34 +34,41 @@ function draw() {
   if (gameState === 1){
     startGame();
 
-  }else
+  }
   if (gameState === 2){
     playGame();
 
-  }else
+  }
   if (gameState === 3){
     endGame();
 
-  }else
+  }
 
 
 }
 
   function startGame(){
 
-    document.getElementsByTagName(startscreen)
+    image(img, 0, 0);
+    //text('Hit the space bar to play', 100, 300)
 
+    if(keyCode === 32){
+      gameState === 2
+    }
   }
 
   function playGame(){
     if(snake.loc.dist(food.loc) === 0){
       food.pickLoc();
       snake.addSegment();
+      background(2);
 
       snake.run();
       food.run();
 
-      background(2);
+      if(snake === dead){
+        gameState === 3
+      }
     }
 
 
@@ -65,7 +77,12 @@ function draw() {
   function endgame(){
     load.endGame()
 
+
+    if(keyCode === 32){
+      gameState === 2
+    }
   }
+
 
 
   function keyPressed(){
